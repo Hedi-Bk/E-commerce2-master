@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown, Container, Nav, Navbar } from "react-bootstrap";
 import { FaHome, FaMoon, FaSun, FaBars, FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "../context/ThemeContextProvider";
 import { useWindowSize } from "../hooks/useWindowSize";
 import { useFilterBarState } from "../context/FilterBar";
@@ -35,7 +35,11 @@ export default function FirstHeader() {
     }
     document.body.style.background = bodyBg;
   };
+  const navigate = useNavigate();
 
+  const handleNavigation = () => {
+    navigate("/login");
+  };
   return (
     <>
       <div className="header ">
@@ -81,7 +85,9 @@ export default function FirstHeader() {
             {/* Containg the cart icon with dropdown of all the products in the cart */}
             <Nav className="navIcons  ">
               <Dropdown>
-                <button className="firstbtn ">Login / Register</button>
+                <button onClick={handleNavigation} className="firstbtn ">
+                  Login / Register
+                </button>
               </Dropdown>
             </Nav>
           </Container>

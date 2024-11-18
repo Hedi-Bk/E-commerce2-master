@@ -27,7 +27,7 @@ export default function InterfaceOne() {
       </Row>
       {/* Nos Services */}
       <Row className="mt-5 Sarbini">
-        <Col sm="12" className="mt-5">
+        <Col sm="12" className="my-5">
           <Container className="justify-content-center d-flex">
             <div className="text-center">
               <h1 className="animate__animated animate__slideInUp animate__slower text-center">

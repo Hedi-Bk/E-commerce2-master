@@ -70,7 +70,7 @@ export default function MyHeader() {
               {/* Containg the logo */}
               <div className="d-flex justify-content-between align-items-center ">
                 <Navbar.Brand style={{ color: theme === "dark" && "white" }}>
-                  <Link to="/">
+                  <Link to="/home">
                     <img
                       className=""
                       src={logo}
@@ -180,7 +180,7 @@ export default function MyHeader() {
               </span>
 
               {/* Home button */}
-              <Link to="/">
+              <Link to="/home">
                 <FaHome fontSize="25px" className="ms-3 mt-2" />
               </Link>
 
