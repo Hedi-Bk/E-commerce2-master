@@ -1,11 +1,15 @@
+//React Imortations
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+//Bootstrap Imporatations
 import "bootstrap/dist/css/bootstrap.min.css";
+//
 import CartContext from "./context/CartContext";
 import ThemeContextProvider from "./context/ThemeContextProvider";
 import FilterBar from "./context/FilterBar";
-import { BrowserRouter } from "react-router-dom";
+//
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
