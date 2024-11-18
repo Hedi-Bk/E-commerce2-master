@@ -1,0 +1,23 @@
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+body {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+.shad {
+  box-shadow: px 4px 15px #000000f2;
+}
+.navlinks {
+  font-size: 16px;
+  transition: 0.5s;
+  width: 220px;
+  &:hover {
+    box-shadow: 1px 4px 15px black;
+    font-size: 17px;
+    border-radius: 3px;
+  }
+}
